@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "26416695464",
+    "project_id": "signal-e7305",
+    "storage_bucket": "signal-e7305.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26416695464:android:c941045c19f9b216781a9d",
+        "android_client_info": {
+          "package_name": "com.morpheus.signal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26416695464-jqja043o73s1g2kkaph5lq08p708qc50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDinNMBugNY23DVSIXjrTOU0rmeh44qzs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26416695464-jqja043o73s1g2kkaph5lq08p708qc50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
