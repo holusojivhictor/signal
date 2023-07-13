@@ -13,6 +13,8 @@ const String kShortPassError = 'Your password should be at least 8 characters.';
 abstract class Constants {
   static const double splashLogoDimension = 195;
 
+  static const Duration kAnimationDuration = Duration(milliseconds: 200);
+
   /// Languages map
   static const Map<AppLanguageType, Language> languagesMap = {
     AppLanguageType.english: Language('en', 'US'),

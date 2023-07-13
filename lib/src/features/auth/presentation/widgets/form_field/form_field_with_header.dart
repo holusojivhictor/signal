@@ -38,7 +38,7 @@ class _FormFieldWithHeaderState extends State<FormFieldWithHeader> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Column(
-      children: [
+      children: <Widget>[
         Row(
           children: [
             Text(

@@ -14,7 +14,7 @@ class ExtraActions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: <Widget>[
         Padding(
           padding: Styles.edgeInsetVertical10,
           child: Row(

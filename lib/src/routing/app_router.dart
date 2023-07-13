@@ -3,8 +3,10 @@ import 'package:go_router/go_router.dart';
 import 'package:signal/src/config/injection.dart';
 import 'package:signal/src/features/auth/application/auth_bloc.dart';
 import 'package:signal/src/features/auth/presentation/login_page.dart';
+import 'package:signal/src/features/common/presentation/activity/activity_page.dart';
 import 'package:signal/src/features/common/presentation/splash/animated_splash.dart';
 import 'package:signal/src/features/home/presentation/home_page.dart';
+import 'package:signal/src/features/settings/presentation/settings_page.dart';
 import 'package:signal/src/routing/go_router_refresh_stream.dart';
 import 'package:signal/src/routing/mobile_scaffold.dart';
 
@@ -87,7 +89,7 @@ class AppRouter {
                 name: AppRoute.track.name,
                 pageBuilder: (context, state) => NoTransitionPage(
                   key: state.pageKey,
-                  child: const Placeholder(),
+                  child: const ActivityPage(),
                 ),
               ),
             ],
@@ -100,7 +102,7 @@ class AppRouter {
                 name: AppRoute.settings.name,
                 pageBuilder: (context, state) => NoTransitionPage(
                   key: state.pageKey,
-                  child: const Placeholder(),
+                  child: const SettingsPage(),
                 ),
               ),
             ],

@@ -5,6 +5,7 @@ import 'package:signal/src/features/common/application/bloc.dart';
 import 'package:signal/src/features/common/presentation/colors.dart';
 import 'package:signal/src/features/common/presentation/navigation_bar/navigation_bar.dart';
 import 'package:signal/src/features/common/presentation/styles.dart';
+import 'package:signal/src/features/home/application/home_bloc.dart';
 import 'package:signal/src/utils/utils.dart';
 
 class MobileScaffold extends StatefulWidget {
@@ -18,6 +19,15 @@ class MobileScaffold extends StatefulWidget {
 
 class _MobileScaffoldState extends State<MobileScaffold> {
   DateTime? backButtonPressTime;
+  bool _didChangeDependencies = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_didChangeDependencies) return;
+    _didChangeDependencies = true;
+    context.read<HomeBloc>().add(HomeInit());
+  }
 
   @override
   Widget build(BuildContext context) {
