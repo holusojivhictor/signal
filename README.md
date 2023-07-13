@@ -20,9 +20,9 @@ You can build and run the project by following these steps:
 
 ## Run tests
 
-* Run ``flutter test``
+* Run ``flutter test`` in project root
 
-_\*Hooks works on iOS, and Android_
+_\*Signal works on iOS, and Android_
 
 ### [License: MIT](LICENSE.md)
 

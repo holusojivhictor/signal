@@ -16,6 +16,7 @@ class CustomTabBarView extends StatelessWidget {
           for (final type in Tracker.values)
             TrackersListView(
               key: ValueKey<Tracker>(type),
+              type: type,
             ),
         ],
       ),

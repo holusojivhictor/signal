@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:signal/src/features/common/presentation/styles.dart';
+import 'package:signal/src/features/home/domain/enums/enums.dart';
 import 'package:signal/src/features/home/presentation/widgets/lists/trackers_list_view.dart';
 
 const _kPadding = EdgeInsets.only(bottom: 15, right: 16, left: 16);
@@ -7,11 +8,13 @@ const _kPadding = EdgeInsets.only(bottom: 15, right: 16, left: 16);
 class TrackerCard extends StatelessWidget {
   const TrackerCard({
     required this.item,
+    required this.type,
     super.key,
     this.elevation = 0,
   });
 
   final TrackerItem item;
+  final Tracker type;
   final double elevation;
 
   @override
@@ -42,7 +45,9 @@ class TrackerCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      item.description,
+                      type == Tracker.groups
+                          ? 'Signal group'
+                          : item.description,
                       style: textTheme.bodySmall!.copyWith(
                         fontSize: 14,
                       ),

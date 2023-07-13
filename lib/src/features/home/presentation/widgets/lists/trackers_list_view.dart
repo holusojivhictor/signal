@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signal/src/features/home/domain/enums/enums.dart';
 import 'package:signal/src/features/home/presentation/widgets/cards/tracker_card.dart';
 
 class TrackerItem {
@@ -22,7 +23,9 @@ const trackers = [
 ];
 
 class TrackersListView extends StatelessWidget {
-  const TrackersListView({super.key});
+  const TrackersListView({required this.type, super.key});
+
+  final Tracker type;
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +34,7 @@ class TrackersListView extends StatelessWidget {
         10,
         (index) => TrackerCard(
           item: trackers[0],
+          type: type,
         ),
       ),
     );

@@ -32,7 +32,7 @@ class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
         themeMode: preferences.themeMode,
         currentTheme: preferences.appTheme,
         currentLanguage: preferences.appLanguage,
-        appVersion: _deviceInfoService.version,
+        appVersion: _deviceInfoService.versionWithBuildNumber,
         doubleBackToClose: preferences.doubleBackToClose,
       ),
     );
