@@ -33,17 +33,21 @@ dependencies:
       ref: main
 
 dev_dependencies:
+  bloc_test: ^9.1.3
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
   json_serializable: ^6.7.1
+  mocktail: ^0.3.0
   very_good_analysis: ^5.0.0+1
 
 flutter:
   uses-material-design: true
 
   assets:
+    - assets/db/
     - assets/gifs/
+    - assets/images/
     - assets/svgs/
 
   fonts:

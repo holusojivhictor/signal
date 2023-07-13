@@ -5,6 +5,12 @@
 
 Metrdev assessment exercise submission.
 
+---
+
+## App distribution
+
+Download the apk here:
+
 ## Getting Started 🚀
 
 You can build and run the project by following these steps:
@@ -12,11 +18,11 @@ You can build and run the project by following these steps:
 * Clone this repository
 * Run ``flutter pub get``
 
-## Features
+## Run tests
 
-- _Coming soon_
+* Run ``flutter test`` in project root
 
-_\*Hooks works on iOS, Android, and Web_
+_\*Signal works on iOS, and Android_
 
 ### [License: MIT](LICENSE.md)
 

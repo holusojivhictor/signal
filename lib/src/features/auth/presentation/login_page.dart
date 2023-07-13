@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:signal/src/extensions/extensions.dart';
 import 'package:signal/src/features/auth/presentation/widgets/custom_app_bar.dart';
 import 'package:signal/src/features/auth/presentation/widgets/divider.dart';
 import 'package:signal/src/features/auth/presentation/widgets/extra_actions.dart';
 import 'package:signal/src/features/auth/presentation/widgets/login_form.dart';
-import 'package:signal/src/utils/toast_utils.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -22,17 +22,12 @@ class LoginPage extends StatelessWidget {
               const LoginForm(),
               const FormDivider(),
               ExtraActions(
-                onTap: () => onTap(context),
+                onTap: context.development,
               ),
             ],
           ),
         ),
       ),
     );
-  }
-
-  void onTap(BuildContext context) {
-    final fToast = ToastUtils.of(context);
-    ToastUtils.showInfoToast(fToast, 'In development');
   }
 }

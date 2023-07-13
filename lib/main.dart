@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:signal/src/app.dart';
 import 'package:signal/src/config/injection.dart';
 import 'package:signal/src/extensions/extensions.dart';
@@ -8,6 +9,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   registerErrorHandlers();
   await Injection.init();
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
   runApp(const SignalApp());
 }

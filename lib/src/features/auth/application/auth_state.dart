@@ -23,7 +23,7 @@ class AuthState extends Equatable {
   final bool isLoggedIn;
   final AuthStatus status;
 
-  String get username => user.username;
+  String get username => user.username.split('@').first;
 
   AuthState copyWith({
     User? user,

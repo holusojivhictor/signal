@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:signal/src/features/common/presentation/colors.dart';
 
@@ -23,9 +25,11 @@ class Styles {
     vertical: 18,
   );
 
+  static const stadiumBorder = BorderRadius.all(Radius.circular(30));
+
   static const formFieldBorder = OutlineInputBorder(
     borderSide: BorderSide.none,
-    borderRadius: BorderRadius.all(Radius.circular(30)),
+    borderRadius: stadiumBorder,
   );
 
   static const focusedFormFieldBorder = OutlineInputBorder(
@@ -40,7 +44,17 @@ class Styles {
     ),
   );
 
-  static const defaultBorderRadius = BorderRadius.all(Radius.circular(10));
+  static const homeCardGradient = SweepGradient(
+    center: Alignment.topLeft,
+    colors: <Color>[
+      AppColors.secondary,
+      AppColors.primary,
+    ],
+    stops: <double>[0, 0.4],
+    transform: GradientRotation(math.pi * 2),
+  );
+
+  static const defaultBorderRadius = BorderRadius.all(Radius.circular(20));
 
   static const formBorderRadius = BorderRadius.all(Radius.circular(24));
 }

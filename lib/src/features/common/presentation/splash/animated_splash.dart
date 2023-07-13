@@ -33,13 +33,16 @@ class _AnimatedSplashState extends State<AnimatedSplash> {
             fit: StackFit.expand,
             children: [
               if (state.status == AuthStatus.loading)
-                const Positioned(
+                Positioned(
                   top: 0,
                   right: 0,
                   left: 0,
                   child: SizedBox(
                     height: 3,
-                    child: LinearProgressIndicator(color: AppColors.primary),
+                    child: LinearProgressIndicator(
+                      color: AppColors.primary,
+                      backgroundColor: theme.scaffoldBackgroundColor,
+                    ),
                   ),
                 ),
               Column(
@@ -56,7 +59,7 @@ class _AnimatedSplashState extends State<AnimatedSplash> {
               Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: [
+                  children: <Widget>[
                     SizedBox(
                       width: Constants.splashLogoDimension,
                       height: Constants.splashLogoDimension,

@@ -4,6 +4,8 @@ import 'package:signal/src/config/injection.dart';
 import 'package:signal/src/features/app_widget.dart';
 import 'package:signal/src/features/common/application/bloc.dart';
 import 'package:signal/src/features/common/infrastructure/infrastructure.dart';
+import 'package:signal/src/features/home/application/home_bloc.dart';
+import 'package:signal/src/features/home/infrastructure/wallet_service.dart';
 
 class SignalApp extends StatelessWidget {
   const SignalApp({super.key});
@@ -12,6 +14,12 @@ class SignalApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
+        BlocProvider(
+          create: (ctx) {
+            final walletService = getIt<WalletService>();
+            return HomeBloc(walletService);
+          },
+        ),
         BlocProvider(
           create: (ctx) {
             final loggingService = getIt<LoggingService>();

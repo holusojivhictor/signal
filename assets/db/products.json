@@ -1,0 +1,58 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "productId": "BTC-USDT",
+            "asset": "bitcoin.svg",
+            "change": 25.3
+        },
+        {
+            "id": 1,
+            "productId": "ETH-USDT",
+            "asset": "ethereum.svg",
+            "change": 18.66
+        },
+        {
+            "id": 2,
+            "productId": "BNB-USDT",
+            "asset": "binance.svg",
+            "change": 32.8
+        },
+        {
+            "id": 3,
+            "productId": "BTC-USDT",
+            "asset": "bitcoin.svg",
+            "change": 25.3
+        },
+        {
+            "id": 4,
+            "productId": "ETH-USDT",
+            "asset": "ethereum.svg",
+            "change": 18.66
+        },
+        {
+            "id": 5,
+            "productId": "BNB-USDT",
+            "asset": "binance.svg",
+            "change": 32.8
+        },
+        {
+            "id": 6,
+            "productId": "BTC-USDT",
+            "asset": "bitcoin.svg",
+            "change": 25.3
+        },
+        {
+            "id": 7,
+            "productId": "ETH-USDT",
+            "asset": "ethereum.svg",
+            "change": 18.66
+        },
+        {
+            "id": 8,
+            "productId": "BNB-USDT",
+            "asset": "binance.svg",
+            "change": 32.8
+        }
+    ]
+}
